@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Chatbot - Your AI Assistant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-animation">
+        <div class="cookie"></div>
+        <div class="cookie"></div>
+        <div class="cookie"></div>
+        <div class="cookie"></div>
+        <div class="cookie"></div>
+    </div>
+    
+    <header>
+        <div class="container">
+            <h1 class="logo">Cookie<span>Chatbot</span></h1>
+            <nav>
+                <ul>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Meet Cookie, Your AI Assistant</h2>
+                    <p>Cookie is here to help you with all your questions, 24/7. Powered by advanced AI to provide smart, contextual responses.</p>
+                    <button id="start-chat" class="cta-button">Start Chatting <i class="fas fa-arrow-right"></i></button>
+                </div>
+                <div class="hero-image">
+                    <div class="chatbot-avatar">
+                        <div class="face">
+                            <div class="eyes">
+                                <div class="eye"></div>
+                                <div class="eye"></div>
+                            </div>
+                            <div class="mouth"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <div class="container">
+                <h2>Why Choose Cookie?</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-bolt"></i></div>
+                        <h3>Lightning Fast</h3>
+                        <p>Get instant responses without any delay, powered by our high-performance servers.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-brain"></i></div>
+                        <h3>Smart AI</h3>
+                        <p>Context-aware conversations that understand your needs and preferences.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-lock"></i></div>
+                        <h3>Secure</h3>
+                        <p>End-to-end encryption ensures your conversations remain private.</p>
+                    </div>
+                </div>
+            </div>jy 
+        </section>
+    </main>
+
+    <!-- Full-screen Chat Interface -->
+    <div id="chat-interface" class="chat-interface hidden">
+        <div class="chat-container">
+            <div class="chat-header">
+                <div class="chatbot-avatar small">
+                    <div class="face">
+                        <div class="eyes">
+                            <div class="eye"></div>
+                            <div class="eye"></div>
+                        </div>
+                        <div class="mouth"></div>
+                    </div>
+                </div>
+                <h2>Cookie Chatbot</h2>
+                <button id="close-chat" class="close-button"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="chat-messages" id="chat-messages">
+                <div class="message bot-message">
+                    <div class="message-content">
+                        <p>Hi there! I'm Cookie, your AI assistant. How can I help you today?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="user-input" placeholder="Type your message here..." autocomplete="off">
+                <button id="send-button"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Cookie Chatbot. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
